@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.mercer.ret.us-benefits"
+        version   = "1.0.093001">
+
+    <name>iPad-Only Splash Test</name>
+
+    <description>
+		iPad-Only Splash Test - Bug Repro
+    </description>
+
+    <author href="http://example.com" email="me@example.com">
+		Mercer
+    </author>
+
+    <preference name="webviewbounce" value="false" />
+	<preference name="orientation" value="default" />
+	<preference name="target-device" value="tablet" />
+	<preference name="detect-data-types" value="true" />
+		
+	<gap:splash src="splash.png" />
+	<gap:splash src="img/Default-Landscape.png" gap:platform="ios" width="1024" height="748" />
+	<gap:splash src="img/Default-Portrait.png" gap:platform="ios" width="768" height="1004" />	
+	<!-- retina iPad support: PhoneGap 2.5.0+ only -->
+    <gap:splash src="img/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
+    <gap:splash src="img/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />
+
+</widget>

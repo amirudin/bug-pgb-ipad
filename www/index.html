@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iPad-Only Splash Test</title>
+
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+		setTimeout(function(){navigator.splashscreen.hide()},5000);
+    }
+
+    </script>
+  </head>
+  <body>
+    iOS Splash test for iPad-only app
+	[ &lt;preference name="target-device" value="tablet" /&gt; ]
+  </body>
+</html>
